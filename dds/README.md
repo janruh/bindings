@@ -87,7 +87,7 @@ This object describes the DDS operations for publishing and subscribing, mapping
 ##### Fixed Fields
 
 Field Name | Type | Applies To | DDS Versions | Description
----|:---:|:---:|---|
+---|:---:|:---:|:---:|---|
 `qos` | object | Publish, Subscribe | 1.4 | Defines QoS policies for the operation, including reliability and latency.
 `dataWriter` | string | Publish | 1.4 | The DataWriter associated with the topic, responsible for publishing data.
 `dataReader` | string | Subscribe | 1.4 | The DataReader associated with the topic, responsible for receiving data.
@@ -132,7 +132,7 @@ This object defines how DDS messages are represented in AsyncAPI. Each message h
 
 ##### Fixed Fields
 
-Field Name | Type | Applies To | DDS Versions | Description
+Field Name | Type | DDS Versions | Description
 ---|:---:|:---:|---|
 `dataType` | object | 1.4 | Defines the type of the message payload, corresponding to the data type used by DataWriters and DataReaders.
 `keyFields` | string | 1.4 | An array of field names used to uniquely identify instances of data.
