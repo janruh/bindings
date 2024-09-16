@@ -33,7 +33,7 @@ This object MUST contain only the properties defined above.
 servers:
   ddsServer:
     bindings:
-      dds:
+      x-dds:
         participantId: domain_participant_1
         qosPolicies:
           reliability: reliable
@@ -67,7 +67,7 @@ This object MUST contain only the properties defined above.
 channels:
   sensor/data:
     bindings:
-      dds:
+      x-dds:
         topicName: SensorDataTopic
         dataType: SensorReading
         qosPolicies:
@@ -104,7 +104,7 @@ channels:
   sensor/data:
     publish:
       bindings:
-        dds:
+        x-dds:
           qos:
             reliability: reliable
             lifespan: 5s
@@ -116,7 +116,7 @@ channels:
   sensor/data:
     subscribe:
       bindings:
-        dds:
+        x-dds:
           qos:
             reliability: best-effort
           dataReader: sensor_reader
@@ -148,7 +148,7 @@ channels:
     subscribe:
       message:
         bindings:
-          dds:
+          x-dds:
             dataType: SensorReading
             keyFields:
               - sensorId
